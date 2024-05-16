@@ -91,6 +91,7 @@ export class PageMainComponent implements OnInit {
     console.log('main init');
     this._http.getUserSession().subscribe();
     this._settingSvc.isDirectNavigation$.subscribe((state) => {
+      this._http.getUserSession().subscribe();
       this.isDirectNavigation = state;
     });
     this.menus = [
