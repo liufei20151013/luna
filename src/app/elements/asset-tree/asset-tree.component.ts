@@ -200,20 +200,6 @@ export class ElementAssetTreeComponent implements OnInit {
         'click': () => {
           tree.expandNode(cnode, false, true, true);
         }
-      },
-      {
-        'id': 'favorite',
-        'name': 'Favorite',
-        'fa': 'fa-star-o',
-        'hide': this.isAssetFavorite() || this.isK8s || cnode.isParent,
-        'click': this.onMenuFavorite.bind(this)
-      },
-      {
-        'id': 'disfavor',
-        'name': 'Disfavor',
-        'fa': 'fa-star',
-        'hide': !this.isAssetFavorite() || this.isK8s || cnode.isParent,
-        'click': this.onMenuFavorite.bind(this)
       }
     ];
   }
