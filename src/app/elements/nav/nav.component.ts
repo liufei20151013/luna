@@ -189,36 +189,7 @@ export class ElementNavComponent implements OnInit {
             }
           }
         ]
-      },
-      {
-        id: 'Help',
-        name: 'Help',
-        children: [
-          {
-            id: 'Document',
-            click: () => {
-              this.HELP_DOCUMENT_URL = this._settingSvc.globalSetting.HELP_DOCUMENT_URL;
-              window.open(this.HELP_DOCUMENT_URL);
-            },
-            name: 'Document'
-          },
-          {
-            id: 'Support',
-            click: () => {
-              this.HELP_SUPPORT_URL = this._settingSvc.globalSetting.HELP_SUPPORT_URL;
-              window.open(this.HELP_SUPPORT_URL);
-            },
-            name: 'Support'
-          },
-          {
-            id: 'Download',
-            click: () => {
-              window.open('/core/download/', '_blank');
-            },
-            name: 'Download',
-          }
-        ]
-      },
+      }
     ];
   }
 
