@@ -33,4 +33,4 @@ export const ROOT_ORG_ID = '00000000-0000-0000-0000-000000000000';
 
 export const connectEvt = new BehaviorSubject<ConnectEvt>(new ConnectEvt(null, null));
 
-export const resolutionsChoices = ['Auto', '1024x768', '1366x768', '1600x900', '1920x1080'];
+export const resolutionsChoices = ['Auto', '1024x768', '1366x768', '1600x900', '1920x1080', '2560x1440'];
